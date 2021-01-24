@@ -14,9 +14,16 @@
   {% block header %}{% include "partials/header.html" %}{% endblock %}
   <main role="main" id="main-content">{% block main %}{% endblock %}</main>
   {% block footer %}{% include "partials/footer.html" %}{% endblock %}
+  <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/aos.js"></script>
+<script src="js/owl.carousel.min.js"></script>
   <script>
     AOS.init();
+    $('.owl-carousel').owlCarousel({
+    margin:10,
+    nav:true,
+    items:1
+})
   </script>
 </body>
 </html>

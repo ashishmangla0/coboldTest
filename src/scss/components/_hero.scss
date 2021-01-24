@@ -1,5 +1,20 @@
 @include block(section) {
-    @include modifier(hero){
-        min-height: 600px;
+  @include modifier(hero) {
+    height: 550px;
+
+    .owl-carousel,
+    .owl-stage-outer,
+    .owl-stage,
+    .owl-item,
+    .section__hero-container {
+      height: 100%;
     }
+  }
+  @include element(slide) {
+    height: 100%;
+    @include modifier(one) {
+      background: #ffffff url(../images/hero-bg1.png) no-repeat center bottom;
+      background-size: cover;
+    }
+  }
 }

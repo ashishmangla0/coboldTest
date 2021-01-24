@@ -21,7 +21,26 @@
 </header>
   <main role="main" id="main-content">
 <section class="section section--hero">
-    
+    <div class="owl-carousel owl-theme">
+        <div class="section__slide section__slide--one">
+            <div class="container section__hero-container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h1 class="section__hero-title">
+                            SAVING THE WORLD ONE PET AT A TIME
+                        </h1>
+                        <p class="section__hero-content">
+                            At AVANTI, we manufacture pet products from recycled plastic recovered from the oceans.
+                        </p>
+                        
+                    </div>
+                    <div class="col-md-7">
+                        right
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="section section--weare">
     <div class="container">
@@ -358,9 +377,16 @@
     </div>
   </div>
 </footer>
+  <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/aos.js"></script>
+<script src="js/owl.carousel.min.js"></script>
   <script>
     AOS.init();
+    $('.owl-carousel').owlCarousel({
+    margin:10,
+    nav:true,
+    items:1
+})
   </script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+{% set cards = [
+{"title" : "Toys","icons": "icon-dog-toy","bg":"pinklight"},
+{"title" : "Bedding","icons": "icon-outline","bg":"blue"},
+{"title" : "Feeding","icons": "icon-pet-bed","bg":"pinklight2"}]
+%}<section class="section section--weare">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7"></div>
+            <div class="col-md-5">
+                <div class="section__content">
+                    <p>
+                        AVANTI Overseas Private Limited is a 4-decade old manufacturing business, headquartered in New
+                        Delhi, India. We produce sustainable, high quality pet products for pet lovers across the world.
+                        With a primary focus on exports, our products are currently sold in over 25 countries, including
+                        the USA, the UK, Europe, Australia, and Japan.
+                    </p>
+                    AVANTI manufactures pet products in three main categories:
+                    </p>
+                </div>
+                <div class="row">{% for item in cards %}
+                    <div class="col-md-4">
+                        <div class="section__card section__card--{{item.bg}}">
+                            <i class="section__card-icon icon {{item.icons}}"></i>
+                            <p class="section__card-content">
+                                {{item.title}}
+                            </p>
+                        </div>
+                    </div>{% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

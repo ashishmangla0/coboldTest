@@ -11,41 +11,26 @@
     title: "products",
     links : [{"link" : "Bedding"},{"link" : "Toys"},{"link" : "Feeding Products"}]
   }
-  ]%}
-<footer class="footer">
+  ]%}<footer class="footer">
   <div class="container">
     <div class="row">
         <div class="col-md-4 footer__logo-wrap">
-          <a href="#">
-            <img src="images/logo.svg" alt="">
-          </a>
+          <a href="#"><img src="images/logo.svg" alt=""></a>
           <div class="footer__copyright">
-            <p>
-              Copyright 2020 Avanti Product Pvt. Ltd.
-            </p>
-            <p class="footer__designedby">
-              Designed by Cobold Digital
-            </p>
+            <p>Copyright 2020 Avanti Product Pvt. Ltd.</p>
+            <p class="footer__designedby">Designed by Cobold Digital</p>
           </div>
         </div>
-          {% for item in footerLinks %}
-          <div class="col">
-            <h5 class="footer__title">
-              {{ item.title | title }}
-            </h5>
-            <ul class="footer__list">
-              {% for link in item.links %}
-                  <li class="footer__item">
-                    <a class="footer__link" href="#">{{ link.link }}</a>
-                  </li>
-              {% endfor %}
+          {% for item in footerLinks %}<div class="col">
+            <h5 class="footer__title">{{ item.title | title }}</h5>
+            <ul class="footer__list">{% for link in item.links %}
+              <li class="footer__item">
+                <a class="footer__link" href="#">{{ link.link }}</a>
+              </li>{% endfor %}
             </ul>
-          </div>
-        {% endfor %}
+          </div>{% endfor %}
         <div class="col footer__contact">
-          <h5 class="footer__title">
-            contacts
-          </h5>
+          <h5 class="footer__title">contacts</h5>
           <ul class="footer__list">
             <li class="footer__item">
               Sales<br/>
@@ -59,8 +44,7 @@
             </li>
           </ul>
         </div>
-            
-        </div>
+      </div>
     </div>
   </div>
 </footer>

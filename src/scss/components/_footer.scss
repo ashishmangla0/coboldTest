@@ -1,10 +1,11 @@
   
 @include block(footer) {
     font-size: rem(14px);
+    color: #989898;
     @include element(title){
         text-transform: uppercase;
         margin-bottom: rem(24px);
-        font-size: rem(14px);
+        font-size: inherit;
         font-weight: 700;
     }
     @include element(logo-wrap){
@@ -19,6 +20,14 @@
     }
     @include element(designedby){
         font-size: rem(12px);
+    }
+    @include element(item){
+        &:not(:last-child){
+            margin-bottom: rem(18px);
+        }
+    }
+    @include element(list){
+        @extend %listNoStyle;
     }
 
 }

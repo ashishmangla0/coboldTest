@@ -1,0 +1,16 @@
+
+.icon-dog-toy {
+    &:before {
+      content: $icon-dog-toy; 
+    }
+  }
+  .icon-outline {
+    &:before {
+      content: $icon-outline; 
+    }
+  }
+  .icon-pet-bed {
+    &:before {
+      content: $icon-pet-bed; 
+    }
+  }

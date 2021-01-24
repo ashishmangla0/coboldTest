@@ -1,0 +1,14 @@
+@include block(section) {
+    @include modifier(weare){
+        &::before{ content: "";
+            width: rem(340px);
+            height: rem(640px);
+            display: block;
+            background-color: #fcf2f4;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

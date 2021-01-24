@@ -6,13 +6,17 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.min.css">
+  
 </head>
 <body>
   {% block header %}{% include "partials/header.html" %}{% endblock %}
-  <main role="main" id="main-content">
-    {% block main %}{% endblock %}
-  </main> 
+  <main role="main" id="main-content">{% block main %}{% endblock %}</main>
   {% block footer %}{% include "partials/footer.html" %}{% endblock %}
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -64,6 +64,10 @@
       @extend %font-bold;
       padding: rem(8px);
       border-bottom: 1px solid $lightColor;
+      
+      &:hover{
+        border:1px solid $lightColor ;
+      }
     }
   }
 }

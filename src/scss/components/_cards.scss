@@ -1,0 +1,39 @@
+@include block(section) {
+  @include element(card) {
+    @extend %justAligCenter;
+    border-radius: rem(16px);
+    padding: rem(20px);
+    flex-direction: column;
+    margin-bottom: rem(30px);
+    transition:box-shadow .15s ease-in-out,translate .15s ease-in-out;
+    @include modifier(pinklight) {
+      background: #fcf2f4;
+    }
+    @include modifier(pinklight2) {
+      background: #faf4ed;
+    }
+    @include modifier(blue) {
+      background: #f0f3f7;
+    }
+    &:hover {
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+      transition: box-shadow .15s ease-in-out,translate .15s ease-in-out
+    }
+  }
+  @include element(card-icon) {
+    width: rem(75px);
+    height: rem(75px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: $lightColor;
+    border-radius: 50%;
+    font-size: rem(32px);
+    margin-bottom: rem(15px);
+  }
+  @include element(card-content) {
+    margin: 0;
+    font-size: rem(13px);
+  }
+}

@@ -37,3 +37,21 @@
 %font-bold{
     font-weight: 700;
 }
+%absltrz{
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+%justAligCenterFlex{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+%font30{
+  font-size: rem(30px);
+}
+%line1{
+  line-height: 1;
+}

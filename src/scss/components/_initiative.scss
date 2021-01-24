@@ -1,0 +1,25 @@
+@include block(section) {
+  @include modifier(initiative) {
+    padding: rem(68px) 0 rem(132px) 0;
+    &::before {
+      content: "";
+      background: #e9f1f5;
+      width: rem(527px);
+      height: rem(382px);
+      @extend %absltrz;
+    }
+    @include element(title){
+      @extend %font30;
+    }
+  }
+  @include element(initiative) {
+    &-link {
+      @extend %font-bold;
+      color: #4b4b4b;
+      text-decoration: underline;
+      &:hover,&:focus{
+        text-decoration: underline;
+      }
+    }
+  }
+}

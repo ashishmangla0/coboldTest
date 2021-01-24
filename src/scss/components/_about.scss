@@ -1,0 +1,43 @@
+@include block(section) {
+    @include modifier(about){
+        padding: rem(56px) 0 rem(56px) 0 ;
+        @include element(item){
+            @extend %justAligCenter;
+        }
+        @include element(title){
+            @extend %font24;
+        }
+        @include element(link){
+            position: absolute;
+            color: #414141;
+            font-size: rem(36px);
+            bottom: rem(30px);
+            right: rem(-60px);
+            @extend %font-bold;
+
+        }
+    }
+    @include element(row){
+        &-certi{
+            margin-bottom: rem(56px);
+        }
+    }
+    @include element(services){
+        margin-bottom: rem(69px);
+        .section__title{
+            @extend %line1;
+            @extend %font30;
+        }
+    }
+    @include element(why){
+        .section__title{
+           @extend %line1;
+        }
+    }
+    @include element(rightimg){
+        position: relative;
+        .section__link{
+           
+        }
+    }
+}

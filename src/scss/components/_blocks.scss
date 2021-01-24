@@ -1,3 +1,17 @@
 @include block(section) {
     position: relative;
+    @include element(title){
+        margin-bottom: rem(29px);
+        @extend %font-bold;
+    }
+    @include element(left){
+        &center{
+            @extend %justAligCenterFlex;
+        }
+    }
+    @include element(right){
+        &center{
+            @extend .section__leftcenter;
+        }
+    }
 }

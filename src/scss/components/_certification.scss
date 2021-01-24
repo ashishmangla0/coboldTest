@@ -1,0 +1,16 @@
+@include block(section) {
+    @include modifier(certifications){
+        padding: rem(56px) 0 rem(68px) 0 ;
+        @include element(item){
+            @extend %justAligCenter;
+        }
+        @include element(title){
+            @extend %font24;
+        }
+    }
+    @include element(row){
+        &-certi{
+            margin-bottom: rem(56px);
+        }
+    }
+}

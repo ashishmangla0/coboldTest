@@ -1,0 +1,21 @@
+@include block(btn) {
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    @extend %textCenter;
+    display: inline-flex;
+    @include modifier(pink){
+        background: #F78AB8;
+        color: $lightColor;
+        padding: rem(14px) rem(55px);
+        border-color: darken($color:  #F78AB8, $amount: 10%);
+        &:hover{
+            background: $lightColor;
+            color: #F78AB8;
+        }
+    }
+    @include modifier(norad){
+        border-radius: 0;
+    }
+}

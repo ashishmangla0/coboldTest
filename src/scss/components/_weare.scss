@@ -1,14 +1,31 @@
 @include block(section) {
-    @include modifier(weare){
-        &::before{ content: "";
-            width: rem(340px);
-            height: rem(640px);
-            display: block;
-            background-color: #fcf2f4;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
+  @include modifier(weare) {
+    &::before {
+      content: "";
+      width: rem(340px);
+      height: rem(640px);
+      display: block;
+      background-color: #fcf2f4;
+      position: absolute;
+      left: 0;
+      top: 50%;
     }
+    @include element(title-wrap){
+        position: absolute;
+        text-align: left;
+        top:rem(30px);
+        left: 0;
+    }
+
+    @include element(title) {
+      color: #414141;
+      font-size: rem(37px);
+      margin:0;
+    }
+    @include element(sub-title) {
+      @extend %fontLarianti;
+      font-size: rem(26px);
+      line-height: rem(81px);
+    }
+  }
 }

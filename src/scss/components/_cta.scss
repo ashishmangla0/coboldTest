@@ -29,7 +29,7 @@
     @include element(title) {
       margin-bottom: 0;
       @extend %font24;
-      font-family: "Larianti";
+      @extend %fontLarianti;
       line-height: rem(70px);
     }
     @include element(sub-title) {

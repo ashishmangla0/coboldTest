@@ -14,4 +14,10 @@
             @extend .section__leftcenter;
         }
     }
+    @include element(textright){
+        text-align: right;
+    }
+    @include element(selfcenter){
+        align-self: center;
+    }
 }

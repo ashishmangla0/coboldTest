@@ -1,14 +1,39 @@
 %flexwrap {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-%spacebtw{
-    justify-content: space-between;
+%spacebtw {
+  justify-content: space-between;
 }
 
-%listNoStyle{
-    margin:0;
-    padding: 0;
-    list-style: none;
+%justAligCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%listNoStyle {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%flexCol {
+  flex-direction: column;
+  display: flex;
+}
+
+%textRight{
+    text-align: right;
+}
+%textCenter{
+    text-align: center;
+}
+
+%font24{
+    font-size: rem(24px);
+}
+%font-bold{
+    font-weight: 700;
 }

@@ -2,11 +2,13 @@
 @include block(footer) {
     font-size: rem(14px);
     color: #989898;
+    margin-top: auto;
+    padding: rem(55px) 0;
     @include element(title){
         text-transform: uppercase;
         margin-bottom: rem(24px);
         font-size: inherit;
-        font-weight: 700;
+        @extend %font-bold;
     }
     @include element(logo-wrap){
         @extend %flexwrap;
@@ -28,6 +30,15 @@
     }
     @include element(list){
         @extend %listNoStyle;
+    }
+    @include element(contact){
+        @extend %textRight;
+    }
+    @include element (link){
+        color: inherit;
+        &:hover{
+           color: #4b4b4b;
+        }
     }
 
 }

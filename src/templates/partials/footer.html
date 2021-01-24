@@ -1,22 +1,22 @@
 {% set footerLinks = [
   {
     title: "brands",
-    links : [{"link" : "durapet"},{"link" : "vaccumat"},{"link" : "resploot"},{"link" : "white label products"}]
+    links : [{"link" : "Durapet"},{"link" : "Vaccumat"},{"link" : "Resploot"},{"link" : "White label Products"}]
   },
   {
     title: "quicklinks",
-    links : [{"link" : "avanti profile"},{"link" : "manufacturing units"},{"link" : "certifications"},{"link" : "cSR & responsibility"}]
+    links : [{"link" : "Avanti Profile"},{"link" : "Manufacturing Units"},{"link" : "Certifications"},{"link" : "CSR & Responsibility"}]
   },
   {
     title: "products",
-    links : [{"link" : "bedding"},{"link" : "toys"},{"link" : "feeding products"}]
+    links : [{"link" : "Bedding"},{"link" : "Toys"},{"link" : "Feeding Products"}]
   }
   ]%}
 <footer class="footer">
   <div class="container">
     <div class="row">
         <div class="col-md-4 footer__logo-wrap">
-          <a href="">
+          <a href="#">
             <img src="images/logo.svg" alt="">
           </a>
           <div class="footer__copyright">
@@ -36,16 +36,28 @@
             <ul class="footer__list">
               {% for link in item.links %}
                   <li class="footer__item">
-                    <a class="footer__link">{{ link.link }}</a>
+                    <a class="footer__link" href="#">{{ link.link }}</a>
                   </li>
               {% endfor %}
             </ul>
           </div>
         {% endfor %}
-        <div class="col">
+        <div class="col footer__contact">
           <h5 class="footer__title">
             contacts
           </h5>
+          <ul class="footer__list">
+            <li class="footer__item">
+              Sales<br/>
+              <a class="footer__link" href="+91-9874563210">+91-9874563210</a><br/>
+              <a class="footer__link" href="sales@avantipets.com">sales@avantipets.com</a>
+            </li>
+            <li class="footer__item">
+              Services<br/>
+              <a class="footer__link" href="+91-8954126985">+91-8954126985</a><br/>
+              <a class="footer__link" href="services@avantipets.com">services@avantipets.com</a>
+            </li>
+          </ul>
         </div>
             
         </div>

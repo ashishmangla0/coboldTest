@@ -1,0 +1,8 @@
+@include block(section) {
+    @include modifier(partners){
+        padding: rem(28px) 0 rem(68px) 0 ;
+        @include element(item){
+            @extend %justAligCenter;
+        }
+    }
+}
